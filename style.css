@@ -68,6 +68,58 @@
 /* Stiluri pentru widget TikTok */
 /* Stiluri pentru widget TikTok */
 /* Stiluri pentru widget TikTok */
+/* Stilizare link */
+/* Container pentru imagini și butoane */
+.srv-box {
+    position: relative; /* Permite alinierea absolută a butoanelor */
+    text-align: center;
+}
+
+.img-box {
+    position: relative;
+    overflow: hidden; /* Ascunde orice depășește limitele imaginii */
+}
+
+/* Butoane care sunt inițial ascunse */
+.srv-content button {
+    position: absolute;
+    bottom: 10px; /* Plasează butonul la 10px de la partea de jos a imaginii */
+    left: 50%; /* Centrează butonul pe orizontală */
+    transform: translateX(-50%); /* Așează butonul perfect pe mijloc */
+    background-color: #008C45; /* Culoare de fundal (verde) */
+    color: white;  /* Text alb */
+    font-size: 18px; /* Mărimea fontului */
+    font-weight: bold; /* Font mai îndrăzneț */
+    padding: 12px 40px; /* Spațiu în jurul textului */
+    border: 2px solid #008C45; /* Bordură subțire verde */
+    border-radius: 30px; /* Colțuri rotunjite pentru un aspect modern */
+    cursor: pointer; /* Mouse pointer când trece deasupra */
+    text-transform: uppercase; /* Transformă textul în majuscule */
+    letter-spacing: 1px; /* Spațiere între litere */
+    transition: all 0.3s ease; /* Efecte de tranziție pentru hover */
+    opacity: 0; /* Butonul este invizibil la început */
+    visibility: hidden; /* Butonul este ascuns */
+}
+
+/* Efect la hover pe imagine - face butonul vizibil */
+.img-box:hover .srv-content button {
+    opacity: 1; /* Face butonul vizibil */
+    visibility: visible; /* Face butonul vizibil */
+    transform: translateX(-50%) translateY(-10px); /* Mică mișcare în sus când este hover */
+}
+
+/* Stil pentru hover pe buton */
+.srv-content button:hover {
+    background-color: #CD212A; /* Culoare roșie la hover */
+    border-color: #CD212A; /* Schimbă bordura la roșu */
+    transform: translateX(-50%) translateY(-13px); /* Mișcare mai accentuată în sus */
+}
+
+/* Efect la click (buton apăsat) */
+.srv-content button:active {
+    transform: translateX(-50%) translateY(-8px); /* Mică mișcare în jos când este apăsat */
+}
+
 
 
 
