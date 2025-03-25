@@ -68,6 +68,22 @@
 /* Stiluri pentru widget TikTok */
 /* Stiluri pentru widget TikTok */
 /* Stiluri pentru widget TikTok */
+.logo {
+    width: 150px; /* Ajustează dimensiunea */
+    height: auto; /* Menține proporțiile */
+}
+@media (max-width: 768px) { /* Pentru mobil */
+    .logo {
+        width: 220px;
+    }
+}
+
+@media (min-width: 1500px) { /* Pentru ecrane mari */
+    .logo {
+        width: 280px;
+    }
+}
+
 /* Stilizare link */
 #so-good-pizza {
     scroll-margin-top: 150px; /* Ajustează în funcție de header-ul tău */
