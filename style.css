@@ -70,25 +70,25 @@
 /* Stiluri pentru widget TikTok */
 /* Stilizare link */
 #so-good-pizza {
-    scroll-margin-top: 50px; /* Ajustează în funcție de header-ul tău */
+    scroll-margin-top: 150px; /* Ajustează în funcție de header-ul tău */
 }
 @media (max-width: 767px) {
     #so-good-pizza {
-        scroll-margin-top: 100px; /* Ajustează valoarea în funcție de necesități */
+        scroll-margin-top: 180px; /* Ajustează valoarea în funcție de necesități */
     }
 }
 
 #so-good-pasta {
-    scroll-margin-top: 50px; /* Ajustează în funcție de header-ul tău */
+    scroll-margin-top: 150px; /* Ajustează în funcție de header-ul tău */
 }
 @media (max-width: 767px) {
     #so-good-pasta {
-        scroll-margin-top: 100px; /* Ajustează valoarea în funcție de necesități */
+        scroll-margin-top: 180px; /* Ajustează valoarea în funcție de necesități */
     }
 }
 
 #specialized-secondi {
-    scroll-margin-top: 50px; /* Ajustează în funcție de header-ul tău */
+    scroll-margin-top: 150px; /* Ajustează în funcție de header-ul tău */
 }
 @media (max-width: 767px) {
     #specialized-secondi {
