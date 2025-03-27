@@ -66,7 +66,7 @@
 /* ## Global ******************************************* */
 /* Stilizare pentru Announcement Bar */
 #footer-main {
-    margin-top: 10px; /* Adăugăm margin-top 0px pentru a elimina orice margine sus */
+    margin-top: 0px; /* Adăugăm margin-top 0px pentru a elimina orice margine sus */
 }
 
 /* Stilizare pentru Announcement Bar */
@@ -114,6 +114,89 @@
 }
 
 /* Stiluri pentru widget TikTok */
+/* Responsivitate pentru ecrane mici (mobil) */
+@media (max-width: 767px) {
+    .testimonial-section {
+        padding: 15px; /* Reducerea padding-ului pentru economisirea spațiului */
+        overflow: hidden; /* Ascunde orice conținut care depășește containerul */
+    }
+
+    .testimonial-section .container {
+        max-width: 100%;  /* Folosește întreaga lățime disponibilă */
+        padding: 0; /* Elimină padding-ul suplimentar pentru container */
+    }
+
+    /* Ajustăm caruselul */
+    .testimonial-section .carousel {
+        height: 350px; /* Setează înălțimea caruselului pentru mobil (poți ajusta pentru a lăsa mai mult loc) */
+        max-width: 100%;  /* Asigură că caruselul nu depășește ecranul */
+        overflow: hidden; /* Ascunde partea care depășește */
+    }
+
+    .testimonial-section .carousel-inner {
+        height: 100%;  /* Asigură că caruselul se va ajusta complet la înălțimea stabilită */
+        width: 100%; /* Asigură că caruselul ocupă întreaga lățime */
+    }
+
+    .testimonial-section .carousel-item {
+        padding: 15px 10px;  /* Reducerea padding-ului pentru fiecare element, mai ales pentru mobil */
+        text-align: center; /* Asigură că textul este centrat în container */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Aliniază vertical textul */
+    }
+
+    .testimonial-section .carousel-item p {
+        font-size: 14px;  /* Ajustează dimensiunea textului */
+        line-height: 1.4;  /* Mărim line-height-ul pentru a face textul mai compact */
+        word-wrap: break-word; /* Permite textului să se rupă pe linii noi */
+        overflow-wrap: break-word; /* Adaugă compatibilitate pentru mai multe browsere */
+        white-space: normal; /* Textul va rămâne în limitele containerului */
+        margin-bottom: 10px;  /* Reduce spațiul între paragrafe */
+        max-height: 80%; /* Permite textului să utilizeze până la 80% din înălțimea caruselului */
+        overflow: visible; /* Permite textului să depășească dacă este nevoie, fără a-l ascunde */
+    }
+
+    .testimonial-section .carousel-item i img {
+        width: 20px;  /* Micșorăm dimensiunea imaginii citatului */
+        margin-top: 10px;
+    }
+
+    .testimonial-section .carousel-item h5 {
+        font-size: 14px;  /* Micșorăm dimensiunea numelui clientului */
+        margin-top: 5px;  /* Reducem distanța între citat și numele clientului */
+        font-weight: bold;
+        color: #333; /* Culoare pentru numele clientului */
+        text-align: center; /* Aliniază numele la centru */
+        margin-bottom: 5px; /* Reducerea spațiului de sub numele clientului */
+    }
+
+    .testimonial-section .section-header h3 {
+        font-size: 18px;  /* Ajustează dimensiunea titlului */
+        margin-bottom: 0px; /* Reducerea distanței între titlu și subtitlu */
+    }
+
+    .testimonial-section .section-header h4 {
+        font-size: 14px;  /* Ajustează dimensiunea subtitlului */
+        margin-bottom: 15px;
+    }
+
+    .testimonial-section .carousel-indicators {
+        bottom: 10px; /* Ajustează indicatorii pentru mobil */
+    }
+
+    .testimonial-section .carousel-indicators li {
+        width: 8px;
+        height: 8px;  /* Micșorează indicatorii pe mobil */
+    }
+}
+
+/* Responsivitate pentru tablete (între 768px și 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .testimonial-section .carousel {
+        height: 400px; /* Setează o înălțime mai mică pentru tablete */
+    }
+}
 
 
 /* Stiluri pentru widget TikTok */
