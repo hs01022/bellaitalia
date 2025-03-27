@@ -64,9 +64,190 @@
 ----------*/
 
 /* ## Global ******************************************* */
+/* Stilizare pentru Announcement Bar */
+#footer-main {
+    margin-top: 10px; /* Adăugăm margin-top 0px pentru a elimina orice margine sus */
+}
+
+/* Stilizare pentru Announcement Bar */
+.announcement-bar {
+    background: linear-gradient(to right, #009246, #ffffff, #ce2b37); /* Gradient cu culorile Italiei */
+    color: black; /* Font negru */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+    white-space: nowrap; /* Evită ca textul să se rupă pe mai multe linii */
+    overflow: hidden; /* Ascunde textul care depășește zona vizibilă */
+}
+
+/* Animație pentru textul care se mișcă spre stânga */
+.announcement-bar p {
+    margin: 0;
+    font-weight: bold;
+    display: inline-block;
+    animation: slide-left 15s linear infinite; /* Animație continuă pe 15 secunde */
+}
+
+/* Definirea animației pentru a muta textul spre stânga */
+@keyframes slide-left {
+    0% {
+        transform: translateX(50%); /* Pornește de la jumătatea ecranului */
+    }
+    100% {
+        transform: translateX(-100%); /* Se va deplasa complet spre stânga */
+    }
+}
+
+/* Media queries pentru a adapta la dispozitive mobile */
+@media (max-width: 768px) {
+    .announcement-bar {
+        font-size: 16px; /* Font mai mic pentru mobil */
+        padding: 8px 0; /* Mai puțin padding pe mobil */
+    }
+
+    .announcement-bar p {
+        font-size: 14px; /* Font mai mic pe mobil */
+    }
+}
 
 /* Stiluri pentru widget TikTok */
+.testimonial-section {
+    padding-top: 20px; /* Padding sus */
+    padding-bottom: 0px; /* Eliminăm padding-ul de jos pentru a reduce distanța dintre testimoniale și footer */
+    min-height: 300px; /* Reducem înălțimea secțiunii */
+    margin-bottom: 0; /* Eliminăm orice margine de jos suplimentară */
+}
+
+.container {
+    width: 70%; /* Micșorăm lățimea containerului */
+    margin: 0 auto; /* Centrează containerul */
+}
+
+.section-header h3 {
+    font-size: 32px; /* Menținem dimensiunea fontului pentru titlu */
+    margin-bottom: 10px;
+}
+
+.section-header h4 {
+    font-size: 20px; /* Menținem dimensiunea fontului pentru subtitlu */
+    margin-bottom: 20px;
+}
+
+.carousel-inner {
+    padding: 0 15px; /* Adăugăm un padding mic pentru a face textul să ocupe mai mult spațiu */
+}
+
+.carousel-item {
+    padding: 15px 20px; /* Ajustăm padding-ul */
+}
+
+.carousel-indicators li {
+    background-color: #000;
+}
+
+@media (max-width: 768px) {
+    .testimonial-section {
+        padding-top: 15px;
+        padding-bottom: 0px; /* Eliminăm padding-ul de jos și pe dispozitive mai mici */
+        min-height: 250px; /* Micșorăm înălțimea pe dispozitivele mai mici */
+        margin-bottom: 0; /* Eliminăm marginea de jos */
+    }
+
+    .container {
+        width: 80%; /* Lărgim containerul pentru dispozitive mai mici */
+    }
+
+    .section-header h3 {
+        font-size: 28px; /* Menținem fontul mare */
+    }
+
+    .section-header h4 {
+        font-size: 18px;
+    }
+
+    .carousel-inner {
+        padding: 0 10px;
+    }
+
+    .carousel-item {
+        padding: 10px 15px;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .testimonial-section {
+        padding-top: 10px;
+        padding-bottom: 0px; /* Eliminăm și mai mult padding-ul de jos pe dispozitive foarte mici */
+        min-height: 200px; /* Micșorăm și mai mult înălțimea pe dispozitivele foarte mici */
+        margin-bottom: 0; /* Eliminăm marginea de jos */
+    }
+
+    .container {
+        width: 90%; /* Lărgim containerul pentru dispozitive foarte mici */
+    }
+
+    .section-header h3 {
+        font-size: 24px;
+    }
+
+    .section-header h4 {
+        font-size: 16px;
+    }
+
+    .carousel-item {
+        padding: 5px 10px;
+    }
+}
+
 /* Stiluri pentru widget TikTok */
+.counter-section {
+    padding-top: 30px; /* Reduce padding-ul din partea de sus */
+    padding-bottom: 30px; /* Reduce padding-ul din partea de jos */
+    min-height: 250px; /* Setează o înălțime minimă pentru container */
+}
+
+.counter-box {
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .counter-section {
+        padding-top: 20px; /* Mai puțin padding pe ecranele mici */
+        padding-bottom: 20px; /* Mai puțin padding pe ecranele mici */
+    }
+
+    .col-md-3 {
+        margin-bottom: 20px; /* Adaugă spațiu între coluri pe ecranele mici */
+    }
+
+    .counter-box {
+        padding: 15px; /* Crește paddingul pentru a face elementele mai clare pe ecranele mici */
+    }
+}
+
+@media (max-width: 576px) {
+    .counter-section {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .col-xs-6 {
+        width: 100%; /* Face coloanele să ocupe întreaga lățime pe ecranele foarte mici */
+    }
+
+    .counter-box {
+        padding: 10px; /* Reduce paddingul pentru ecranele foarte mici */
+    }
+}
+
 /* Stiluri pentru widget TikTok */
 .logo {
     width: 150px; /* Ajustează dimensiunea */
