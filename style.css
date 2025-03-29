@@ -64,6 +64,38 @@
 ----------*/
 
 /* ## Global ******************************************* */
+/* stilizare delivery */
+/* Responsivitate pentru mobil */
+@media (max-width: 768px) {
+	.delivery-section .row {
+	  display: flex; /* Asigură că pozele sunt afișate pe aceeași linie */
+	  flex-wrap: nowrap; /* Evită ca imaginile să treacă pe mai multe linii */
+	  gap: 15px; /* Spațiu între imagini */
+	  justify-content: space-between; /* Aliniază imagini pe întreaga lățime a containerului */
+	}
+  
+	.delivery-section .col-md-4,
+	.delivery-section .col-sm-6,
+	.delivery-section .col-xs-12 {
+	  width: 32%; /* Pe mobil, fiecare coloană va ocupa 32% din lățimea containerului pentru a le menține pe aceeași linie */
+	  margin-bottom: 15px; /* Adăugăm distanță între imagini pe mobil */
+	}
+  
+	/* Transformăm imaginea într-un link */
+	.delivery-section .img-box a {
+	  display: block; /* Face imaginea să fie un bloc complet de link */
+	  width: 100%; /* Lățimea link-ului va fi 100% din lățimea containerului */
+	  height: 100%; /* Înălțimea va fi 100% */
+	}
+  
+	/* Asigurăm că imaginea se potrivește în container */
+	.delivery-section .img-box img {
+	  width: 100%; /* Lățimea imaginii să fie 100% din containerul său */
+	  height: auto; /* Menținem raportul de aspect al imaginii */
+	  object-fit: contain; /* Asigurăm că imaginea se potrivește bine în spațiul disponibil */
+	}
+  }
+  
 /* Stilizare pentru Announcement Bar */
 #footer-main {
     margin-top: 0px; /* Adăugăm margin-top 0px pentru a elimina orice margine sus */
