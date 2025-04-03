@@ -65,6 +65,55 @@
 
 /* ## Global ******************************************* */
 /* stilizare delivery */
+.top-right {
+    text-align: right;
+}
+
+.top-social {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.top-social li {
+    display: inline;
+}
+
+/* Pe mobil (pentru lățimi mai mici de 767px) */
+@media (max-width: 767px) {
+    .top-right {
+        width: 100%; /* Asigură-te că ocupă întreaga lățime pe mobil */
+        display: flex;
+        justify-content: flex-start; /* Aliniază butonul la stânga */
+        align-items: center; /* Aliniază pe verticală */
+        padding: 10px 15px; /* Adaugă un pic de spațiu pe sus și jos */
+        box-sizing: border-box; /* Asigură-te că padding-ul nu afectează lățimea totală */
+    }
+
+    .top-social {
+        display: block; /* Lista se află pe verticală pe mobil */
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        width: 100%; /* Ocupă toată lățimea disponibilă */
+    }
+
+    .top-social li {
+        display: block;
+        margin-bottom: 10px; /* Adaugă un pic de spațiu între butoane */
+    }
+
+    .btn {
+        width: auto; /* Butonul va avea o lățime automată, adaptabilă conținutului */
+        padding: 10px 20px; /* Păstrăm padding-ul pentru sus și jos */
+        font-size: 14px; /* Dimensiune text mai mică pentru a se încadra pe mobil */
+        box-sizing: border-box; /* Asigură că padding-ul nu afectează lățimea totală */
+        text-align: center; /* Aliniază textul în buton */
+        padding-top: 10px; /* Modificăm padding-top pentru a adăuga spațiu pe partea de sus */
+        padding-bottom: 10px; /* Adăugăm padding-bottom pentru a păstra dimensiunile uniforme */
+        margin-top: 20px; /* Aici adăugăm margin-top pentru a deplasa butonul mai jos */
+    }
+}
 /* Responsivitate pentru mobil */
 @media (max-width: 768px) {
 	.delivery-section .row {
